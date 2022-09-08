@@ -1,0 +1,38 @@
+.comp {
+  display:flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgb(252, 244, 218);;
+  
+  
+}
+.comp .card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.comp h3{
+    text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.7rem;
+  font-size-adjust: 0.58;
+  color: rgba(202, 243, 255, 0.915);
+  text-shadow: 1px 1px 10px rgb(152, 183, 212);
+  margin-top: 10px;
+}
+
+.comp .player{
+  
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+    margin-top: 32px;
+    
+}

@@ -1,0 +1,25 @@
+.drop-down-list{
+  margin: 24px 0
+}
+
+.drop-down-list label {
+  display: block;
+  margin-bottom: 8px ;
+  font-family: "Barlow", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 10px rgb(152, 183, 212);
+}
+
+.drop-down-list select {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 5px;  
+    font-family: 'Barlow', sans-serif;
+   
+}

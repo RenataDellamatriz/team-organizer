@@ -1,0 +1,22 @@
+button{
+    background-color: #16204c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(252, 244, 218);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    width:70%;
+    padding: 20px;
+    cursor: pointer;
+    color: #e4e8f5;
+    margin: 32px auto;
+    transition:ease-in-out;
+    transition-duration: 0.2s;
+}
+
+button:hover{
+    text-shadow: 1px 1px 10px rgb(152, 183, 212);
+    color: #FFF;
+    box-shadow: 0 0 10px rgba(222, 221, 221, 0.15);
+    
+}

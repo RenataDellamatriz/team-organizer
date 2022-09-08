@@ -1,0 +1,51 @@
+.player {
+  background: rgba(185, 185, 192, 0.027);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  width: 200px;
+  height:300px;     
+  padding:10px 32px;  
+  margin:20px 10px;
+  box-shadow:  1px 1px 5px rgba(189, 212, 234, 0.789);
+  font-family: 'Barlow', sans-serif;
+  display:flex;
+  justify-content: center;
+  
+  }
+
+  .player .image{ 
+  color:WHITE;
+  font-size: larger;
+  
+   
+  }
+  
+  .player img{
+    width:130px;    
+    border-radius: 50%;
+    margin:auto 15%;    
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.656);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  }
+
+  .player h4{
+      font-size: 32px;
+      margin:0 ;
+      text-align: center;
+      color:rgb(198, 201, 253);
+  }
+
+  .player h5{
+    text-align: center;
+    font-size: 30px;
+    font-style: bold;
+    margin:10px;
+  }
+
+  .player p{
+    text-align: center;
+  }

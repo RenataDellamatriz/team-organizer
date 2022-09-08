@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Banner from "./components/Banner";
+import Form from "./components/Form";
+import Comp from "./components/Comp";
+import "./index.css";
 
-function App() {
+function App(props) {
+  const comps = [
+    {
+      name: "Comp 1",
+     
+    },
+    {
+      name: "Comp 2",
+      
+    },
+    {
+      name: "Comp 3",
+      
+    },
+  ];
+  
+  const [players, setPlayers] = useState([]);
+
+  //player pega todas as informações do form
+  const handleNewSubmit = (player) => {
+    console.log(player)
+    setPlayers([...players, player])
+   
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <Form
+        champions={props.champions}
+        handleSubmit={(player) => handleNewSubmit(player)}  
+        comps={comps.map(comp => comp.name)}      
+      />
+        {comps.map(comp => <Comp 
+        key={comp.name} 
+        name={comp.name} 
+        primaryColor={comp.primaryColor} 
+        secondaryColor={comp.secondaryColor}
+        players={players.filter(player => player.comp == comp.name)}
+        />)}        
+      
     </div>
   );
 }
